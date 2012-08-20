@@ -38,10 +38,14 @@ Available Packages (Package_ID)
  * Backbone.js (backbone)
  * Bootstrap (bootstrap)
  * Blueprint (blueprint)
+ * Rails (rails) - Must have the rails gem pre-installed
  * More to come (please fork and add others)
     
 
 ## Version History ##
+
+### 1.0.1 - August 19, 2012
+ * Added rails install package
 
 ### 1.0.0 - August 19, 2012
  * Commit: Initial Release

@@ -91,6 +91,15 @@ then
 	TEXT="installed"
 	mkdir -p "$DIR" ; cd "$DIR" ; curl -silent -L https://github.com/yiisoft/yii/zipball/master > yii.zip ; unzip -qq yii.zip ; rm yii.zip ; cd *-yii-* ; mv * .. ; cd .. ; rm -R *-yii-*
 
+#Rails
+elif [[ $Q == rails* ]]
+then
+	DIR=${Q//rails\\ /}
+	F="Rakefile"
+	APP="Rails"
+	TEXT="installed"
+	rails new "$DIR" --quiet > /dev/null 2>&1 ; cd "$DIR"
+
 #jQuery
 elif [[ $Q == jquery* ]]
 then
